@@ -1,4 +1,4 @@
 .Ds_Store
 *.m~
 *.xlsx~
-
+~$*.xlsx
