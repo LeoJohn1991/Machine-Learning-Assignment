@@ -10,4 +10,3 @@ J = sum((X * theta - Y) .^ 2) / ( 2 * m );
 
 
 end
-

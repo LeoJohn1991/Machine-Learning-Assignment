@@ -26,7 +26,7 @@ fprintf('x = [%.0f %.0f %.0f], y = %.0f \n', [X(1:10, :), Y(1:10, :)]');
 % fprintf('Program paused. Press enter to continue.\n');
 % pause;
 
-% Scale features and set them to zero mean
+%% Scale features and set them to zero mean
 fprintf('Normalizing Features ...\n');
 
 [X mu sigma] = featureNormalize(X);     % (x - mu) / sigma; 均值 0， 标准差 1
@@ -77,6 +77,6 @@ fprintf('\n');
 X_test = digit(trainSize + 1:size(digit,1), 4:6);
 Y_test = digit(trainSize + 1:size(digit,1), 12);
 acc_rate = computeAccuracyRate(X_test, Y_test, theta, mu, sigma);
-fprintf('accurate rate: %.0f\nrate = sum((predict_y-y).^2) / length(y)\n', acc_rate);
+fprintf('test_error: %.0f\nrate = sum((predict_y-y).^2) / length(y)\n', acc_rate);
 
 
