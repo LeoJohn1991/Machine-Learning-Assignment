@@ -51,7 +51,7 @@ for i = 1:num_iters
     theta = theta - alpha * grad_cur;
 end
 
-%plot J_history with iteration
+%% plot J_history with iteration
 figure;
 hold on;
 plot(1:numel(J_history), J_history, '-b', 'LineWidth', 2);
@@ -59,7 +59,7 @@ xlabel('Number of iterations');
 ylabel('Cost J');
 hold off;
 
-%plot accuracy history with iteration
+%% plot accuracy history with iteration
 figure;
 hold on;
 plot(1:numel(acc_history), acc_history, '-b', 'LineWidth', 2);
@@ -67,7 +67,7 @@ xlabel('Number of iterations');
 ylabel('Accuracy Rate of train data');
 hold off;
 
-%%====== compute Test Dat Accuracy Rate ====================
+%% ====== compute Test Data Accuracy Rate ====================
 X_test = digit(trainSize + 1:size(digit,1), featuresRange);
 Y_test = digit(trainSize + 1:size(digit,1), 1);
 
