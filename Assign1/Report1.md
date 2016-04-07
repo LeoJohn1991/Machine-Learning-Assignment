@@ -1,7 +1,5 @@
 # Assignment 1, Liner Regression
 
-**2111512017 李疆**
-
 - 数据读取(Load Data)
 - 数据归一化(features Normalize)
 - 训练梯度下降 (Training - Gradient Descent)
